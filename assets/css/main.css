@@ -4069,3 +4069,93 @@
 		font-style: italic;       /* Estilo cursiva */
 	  }
 	
+/* Contenedor de la imagen con texto superpuesto */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.testimonial-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texto superpuesto */
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.overlay-text blockquote {
+    margin: 0;
+    font-size: 1.1em;
+    font-style: italic;
+    color: white;
+}
+
+.overlay-text p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Contenedor de la imagen con texto superpuesto */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Asegura que ocupe todo el contenedor del swiper */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste de la imagen dentro del contenedor */
+.testimonial-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Texto superpuesto sobre la imagen */
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.overlay-text blockquote {
+    margin: 0;
+    font-size: 1.1em;
+    font-style: italic;
+    color: white;
+}
+
+.overlay-text p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Ajustes responsivos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .overlay-text {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .overlay-text blockquote {
+        font-size: 1em;
+    }
+}
