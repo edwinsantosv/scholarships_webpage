@@ -81,30 +81,29 @@
 
 		}
 
-	    // Initialize Owl Carousel for testimonials
-		$(document).ready(function() {
-			$(".testimonial-carousel").owlCarousel({
-				items: 1, // Show one item at a time
-				loop: true,
-				margin: 10,
-				nav: true,
-				dots: true,
-				autoplay: true,
-				autoplayTimeout: 5000,
-				autoplayHoverPause: true,
-				responsive: {
-					0: {
-						items: 1 // Show 1 item for mobile
-					},
-					600: {
-						items: 2 // Show 1 item for tablets
-					},
-					1000: {
-						items: 3 // Show 1 item for desktop
-					}
+		$(".testimonial-carousel").owlCarousel({
+			items: 1, // Testimonios visibles en pantallas pequeñas
+			loop: true,
+			margin: 10,
+			nav: true,
+			dots: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			responsive: {
+				0: {
+					items: 1 // 1 testimonio visible en pantallas pequeñas
+				},
+				600: {
+					items: 2 // 2 testimonios visibles en tablets
+				},
+				1000: {
+					items: 3 // 3 testimonios visibles en pantallas grandes
 				}
-			});
+			}
 		});
+		
+		
+		
 
 })(jQuery);
 
