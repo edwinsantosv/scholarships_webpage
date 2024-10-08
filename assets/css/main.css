@@ -4159,3 +4159,36 @@
         font-size: 1em;
     }
 }
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.image-gallery a {
+  flex: 1 1 calc(25% - 1em); /* Ajusta el tamaño de las imágenes */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Hacer responsivo */
+@media (max-width: 768px) {
+  .image-gallery a {
+    flex: 1 1 calc(50% - 1em); /* 2 imágenes por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery a {
+    flex: 1 1 100%; /* 1 imagen por fila en pantallas pequeñas */
+  }
+}
