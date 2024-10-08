@@ -4189,6 +4189,6 @@
 
 @media (max-width: 480px) {
   .image-gallery a {
-    flex: 2 2 30%; /* 1 imagen por fila en pantallas pequeñas */
+    flex: 2 2 calc(50% - 1em); /* 1 imagen por fila en pantallas pequeñas */
   }
 }
